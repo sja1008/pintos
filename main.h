@@ -8,3 +8,8 @@
 #include "limits.h"
 #include "list.h"
 #include "round.h"
+
+#define MAX_BITMAP_CNT 20
+#define MAX_BITMAP_NAME_SIZE 10
+
+struct bitmap * look_for_bitmap(char * name);
