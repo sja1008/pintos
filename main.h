@@ -18,4 +18,9 @@
 
 struct bitmap * look_for_bitmap(char * name);
 struct hash * look_for_hash(char * name);
-hash_action_func * look_for_hash_action_func(char * name);
+struct list * look_for_list(char * name);
+void destructor(struct hash_elem * ptr, void * aux);
+unsigned hash_hash (const struct hash_elem *e, void *aux);
+bool hash_less (const struct hash_elem *a, const struct hash_elem *b, void *aux);
+void hash_square (struct hash_elem *e, void *aux);
+void hash_triple (struct hash_elem *e, void *aux);
